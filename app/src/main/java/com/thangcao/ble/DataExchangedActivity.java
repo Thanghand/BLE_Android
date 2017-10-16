@@ -12,7 +12,7 @@ import com.thangcao.core.ble_services.services.data_exchanged.OnBLEDataExchanged
  * Service Data Exchanged is a custom ble serivce from Alpwise
  */
 
-public class DataExchangedActivityOn extends AppCompatActivity implements OnBLEDataExchangedListener {
+public class DataExchangedActivity extends AppCompatActivity implements OnBLEDataExchangedListener {
 
     private BLEServiceProvider bleServiceProvider;
     @Override
@@ -20,7 +20,6 @@ public class DataExchangedActivityOn extends AppCompatActivity implements OnBLED
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data_exchanged);
         bleServiceProvider = BLEServiceProvider.createProvider(this, BLEServiceType.BLE_SERVICE_DATA_EXCHANGED);
-
     }
 
     @Override
